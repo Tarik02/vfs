@@ -1,12 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
 project(vfs VERSION 1.0.0 LANGUAGES C)
 
-#Make sure that custom modules like FindHashMap are found
-list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake)
-
 ##############################################
 # Declare dependencies
-find_package(HashMap 1.0 REQUIRED MODULE)
+find_package(HashMap 1.0 REQUIRED)
 
 ##############################################
 # Create target and set properties
